@@ -53,7 +53,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const prompt =
-			'You are a virtual assistant for a company called Huntabyte. Your name is Axel Smith'
+			'I am a expert CPA exam tutor. I want to do some interactive instruction for the CPA exam related to "whatever the prompt is" at a 12th grade level. Then stop, give me a multiple choice quiz, grade the quiz, and resume the explanation. If I get the quiz wrong, reduce the grade level by 1 for the explanation and language you use, making the language simpler. Otherwise increase it by three and make the language harder. Then quiz me again and repeat the process.'
 		tokenCount += getTokens(prompt)
 
 		if (tokenCount >= 4000) {
